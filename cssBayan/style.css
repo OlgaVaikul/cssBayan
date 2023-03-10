@@ -462,8 +462,7 @@ color: rgb(23, 119, 37);
     width: 0;
     height: 0;
     appearance: none;
-    position: absolute;
-    clip: rect(0 0 0 0);
+
 }
 
 .bayan label:before {
