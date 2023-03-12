@@ -402,17 +402,22 @@ body {
     margin: 0 auto;
 }
 .bayan {
-    border-bottom: 1px solid #b3d4fc;
+    border-bottom: 0.1rem solid #b3d4fc;
 }
 
 h1{
+	font-family: Arial, sans-serif;
 padding: 1rem 1rem;
 	text-align: start;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 600;
 	color: #41a562;
   }
-
+p{	
+	font-family: Arial, sans-serif;
+		font-size: 1.5rem;
+		font-weight: 400;
+}
 .bayan-title{
 	display: flex;
 	justify-content: space-between;
@@ -426,7 +431,7 @@ padding: 1rem 1rem;
   .bayan-mem{
 	width: 0;
 	height: 0;
-	transition:all 0.5s;
+	transition:all 0.8s;
 	padding: 0;
 	margin: 0;
   }
@@ -435,19 +440,17 @@ padding: 1rem 1rem;
   }
 
   .bayan-mem:active{
-	opacity: 0.3;
+	opacity: 0.4;
+	transition: .2s all;
   }
   
   .bayan-input:checked~label .bayan-mem, .bayan:hover .bayan-mem{
 	width: 50%;
 	height: 50%;
-	padding: 1rem 7rem 1rem;
+	padding: 1rem 8rem 1rem;
 	
   }
 
-.bayan input:hover + label {
-    color: #41a562; 
-}
 
 .bayan input:checked + label { 
     color: #41a562;  
@@ -460,12 +463,10 @@ padding: 1rem 1rem;
 	border-top: 0.2rem solid #109319;
 	border-right: 0.2rem solid #109319;
 	transform: rotate(45deg);
-	opacity: 0;
-}
-.container:hover .arrow{
 	opacity: 1;
 }
-  .bayan:hover .arrow, .bayan-input:checked~label .arrow{
+
+  .bayan-input:checked~label .arrow{
 	transform: rotate(135deg); 
 }
   .bayan input:checked ~ .arrow{
@@ -480,12 +481,77 @@ padding: 1rem 1rem;
 
   @media (min-width: 321px) {
 	html {
-	  font-size: 1rem;
+	  font-size: 0.8rem;
 	}
+	h1{
+		font-size: 1rem;
+		font-weight: 300;
+	}
+	p{	
+		font-size: 0.6rem;
+		font-weight: 200;
+	}
+	.bayan-input:checked~label .bayan-mem, .bayan:hover .bayan-mem{
+		width: 40%;
+		height: 40%;
+		padding: 1rem 4rem 1rem;
+	}
+
+	.arrow  {
+		margin-top: 0.2rem;
+		width: 0.3rem;
+		height: 0.3rem;
+		border-top: 0.1rem solid #109319;
+		border-right: 0.1rem solid #109319;
+		margin-right: 0.5em;
+		transform: rotate(45deg);
+	}
+	.bayan input:checked ~ .arrow{
+		transform: rotate(135deg); 
+  }
   }
 
   @media (min-width: 821px) {
 	html {
-	  font-size: 1.5rem;
+	  font-size: 1.2rem;
+	}
+	.bayan-input:checked~label .bayan-mem, .bayan:hover .bayan-mem{
+		width: 50%;
+		height: 50%;
+		padding: 1rem 6.5rem 1rem;
+	}
+	h1{
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	p{	
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}
+
+  @media (min-width: 1200px) {
+	.bayan input:hover + label {
+		color: #41a562; 
+	}
+	.container:hover .arrow{
+		opacity: 1;
+	}
+	  .bayan:hover .arrow, .bayan-input:checked~label .arrow {
+		transform: rotate(135deg); 
+	}
+	.arrow  {
+		width: 0.6rem;
+		height: 0.6rem;
+		border-top: 0.2rem solid #109319;
+		border-right: 0.2rem solid #109319;
+		opacity: 0;
+	}
+	.bayan-input:checked~label .bayan-mem, .bayan:hover .bayan-mem{
+		width: 50%;
+		height: 50%;
+		padding: 1rem 8rem 1rem;
 	}
   }
+
+  
