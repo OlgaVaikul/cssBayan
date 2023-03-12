@@ -448,7 +448,6 @@ p{
 	width: 50%;
 	height: 50%;
 	padding: 1rem 8rem 1rem;
-	
   }
 
 
@@ -465,7 +464,6 @@ p{
 	transform: rotate(45deg);
 	opacity: 1;
 }
-
   .bayan-input:checked~label .arrow{
 	transform: rotate(135deg); 
 }
@@ -477,7 +475,6 @@ p{
 	transform: rotate(135deg); 
   }
 /*Media*/
-
 
   @media (min-width: 321px) {
 	html {
