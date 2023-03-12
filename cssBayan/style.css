@@ -413,13 +413,12 @@ padding: 1rem 1rem;
 	color: #41a562;
   }
 
-  .bayan-title{
+.bayan-title{
 	display: flex;
 	justify-content: space-between;
-cursor: pointer;
-
-  }
-  .bayan-input {
+	cursor: pointer;
+}
+  .bayan-input{
     width: 0;
     height: 0;
   }
@@ -430,11 +429,11 @@ cursor: pointer;
 	transition:all 0.5s;
 	padding: 0;
 	margin: 0;
-	
   }
   .bayan-input {
 	appearance: none;
   }
+
   .bayan-mem:active{
 	opacity: 0.3;
   }
@@ -445,45 +444,37 @@ cursor: pointer;
 	padding: 1rem 7rem 1rem;
 	
   }
-..bayan input:hover + label {
-    
-    color: #41a562;
-    
+
+.bayan input:hover + label {
+    color: #41a562; 
 }
-.bayan input:checked + label {
-    
-    color: #41a562;
-    
+
+.bayan input:checked + label { 
+    color: #41a562;  
 }
 /* Arrow */
 
 .arrow  {
-	width: 10px;
-	height: 10px;
-	border-top: 5px solid #109319;
-	border-right: 5px solid #109319;
-	
+	width: 0.6rem;
+	height: 0.6rem;
+	border-top: 0.2rem solid #109319;
+	border-right: 0.2rem solid #109319;
 	transform: rotate(45deg);
 	opacity: 0;
 }
 .container:hover .arrow{
 	opacity: 1;
-  }
+}
   .bayan:hover .arrow, .bayan-input:checked~label .arrow{
 	transform: rotate(135deg); 
-  }
+}
   .bayan input:checked ~ .arrow{
-		width: 10px;
-		height: 10px;
-		border-top: 5px solid #109319;
-		border-right: 5px solid #109319;
-		margin-right: 60px;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-top: 0.2rem solid #109319;
+	border-right: 0.2rem solid #109319;
 	transform: rotate(135deg); 
   }
-  /*image*/
-  img (
-
-  )
 /*Media*/
 
 
@@ -492,6 +483,7 @@ cursor: pointer;
 	  font-size: 1rem;
 	}
   }
+
   @media (min-width: 821px) {
 	html {
 	  font-size: 1.5rem;
